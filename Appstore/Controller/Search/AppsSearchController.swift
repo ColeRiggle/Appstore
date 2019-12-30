@@ -11,12 +11,12 @@ import SDWebImage
 
 class AppsSearchController: BaseListController, UICollectionViewDelegateFlowLayout, UISearchBarDelegate {
 
-    fileprivate let cellId = "appsSearchCellId"
+    fileprivate let cellId = "id1234"
     
     fileprivate let searchController = UISearchController(searchResultsController: nil)
     
     fileprivate let enterSearchTermLabel: UILabel = {
-      let label = UILabel()
+        let label = UILabel()
         label.text = "Please enter search term above..."
         label.textAlignment = .center
         label.font = UIFont.boldSystemFont(ofSize: 20)
@@ -27,7 +27,6 @@ class AppsSearchController: BaseListController, UICollectionViewDelegateFlowLayo
         super.viewDidLoad()
         
         collectionView.backgroundColor = .white
-        
         collectionView.register(SearchResultCell.self, forCellWithReuseIdentifier: cellId)
         
         collectionView.addSubview(enterSearchTermLabel)
@@ -80,13 +79,9 @@ class AppsSearchController: BaseListController, UICollectionViewDelegateFlowLayo
                 self.collectionView.reloadData()
             }
         }
-    
-        // we need to get back our search results somehow
-        // use a completion block
     }
     
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
-        
         return .init(width: view.frame.width, height: 350)
     }
     
@@ -97,9 +92,7 @@ class AppsSearchController: BaseListController, UICollectionViewDelegateFlowLayo
     
     override func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: cellId, for: indexPath) as! SearchResultCell
-
         cell.appResult = appResults[indexPath.item]
-    
         return cell
     }
 }
