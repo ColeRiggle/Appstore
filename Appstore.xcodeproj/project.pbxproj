@@ -21,6 +21,8 @@
 		D6295CA723AB30C600F9AE9E /* UIView+Layout.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6295CA623AB30C600F9AE9E /* UIView+Layout.swift */; };
 		D6295CA923AB346B00F9AE9E /* VerticalStackView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6295CA823AB346B00F9AE9E /* VerticalStackView.swift */; };
 		D63077B123BDBA1100D9A166 /* AppsPageHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = D63077B023BDBA1100D9A166 /* AppsPageHeader.swift */; };
+		D63077B323BDBB8500D9A166 /* AppsHeaderHorizontalController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D63077B223BDBB8500D9A166 /* AppsHeaderHorizontalController.swift */; };
+		D63077B523BDBD2C00D9A166 /* AppsHeaderCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D63077B423BDBD2C00D9A166 /* AppsHeaderCell.swift */; };
 		D64EA42623B9B71500EA73F8 /* AppsGroupCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D64EA42523B9B71500EA73F8 /* AppsGroupCell.swift */; };
 		D64EA42823B9BB5800EA73F8 /* AppsHorizontalController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D64EA42723B9BB5800EA73F8 /* AppsHorizontalController.swift */; };
 		D6C26DD823B9C11900A824C5 /* AppRowCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6C26DD723B9C11900A824C5 /* AppRowCell.swift */; };
@@ -49,6 +51,8 @@
 		D6295CA623AB30C600F9AE9E /* UIView+Layout.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "UIView+Layout.swift"; path = "../../../../Downloads/UIView+Layout.swift"; sourceTree = "<group>"; };
 		D6295CA823AB346B00F9AE9E /* VerticalStackView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VerticalStackView.swift; sourceTree = "<group>"; };
 		D63077B023BDBA1100D9A166 /* AppsPageHeader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppsPageHeader.swift; sourceTree = "<group>"; };
+		D63077B223BDBB8500D9A166 /* AppsHeaderHorizontalController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppsHeaderHorizontalController.swift; sourceTree = "<group>"; };
+		D63077B423BDBD2C00D9A166 /* AppsHeaderCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppsHeaderCell.swift; sourceTree = "<group>"; };
 		D64EA42523B9B71500EA73F8 /* AppsGroupCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppsGroupCell.swift; sourceTree = "<group>"; };
 		D64EA42723B9BB5800EA73F8 /* AppsHorizontalController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppsHorizontalController.swift; sourceTree = "<group>"; };
 		D6C26DD723B9C11900A824C5 /* AppRowCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppRowCell.swift; sourceTree = "<group>"; };
@@ -168,6 +172,7 @@
 				D6C26DD723B9C11900A824C5 /* AppRowCell.swift */,
 				D64EA42523B9B71500EA73F8 /* AppsGroupCell.swift */,
 				D63077B023BDBA1100D9A166 /* AppsPageHeader.swift */,
+				D63077B423BDBD2C00D9A166 /* AppsHeaderCell.swift */,
 			);
 			path = Apps;
 			sourceTree = "<group>";
@@ -185,6 +190,7 @@
 			children = (
 				D64EA42723B9BB5800EA73F8 /* AppsHorizontalController.swift */,
 				D6E0323A23B9B28D00CDB3FC /* AppsPageController.swift */,
+				D63077B223BDBB8500D9A166 /* AppsHeaderHorizontalController.swift */,
 			);
 			path = Apps;
 			sourceTree = "<group>";
@@ -322,10 +328,12 @@
 				D6295CA423AB232400F9AE9E /* SearchResultCell.swift in Sources */,
 				D6295CA923AB346B00F9AE9E /* VerticalStackView.swift in Sources */,
 				D61FF87223ADD80500429984 /* Service.swift in Sources */,
+				D63077B323BDBB8500D9A166 /* AppsHeaderHorizontalController.swift in Sources */,
 				D63077B123BDBA1100D9A166 /* AppsPageHeader.swift in Sources */,
 				D6295CA723AB30C600F9AE9E /* UIView+Layout.swift in Sources */,
 				D6EDD17E23B9C1E7009187CA /* Extensions.swift in Sources */,
 				D6E0323D23B9B33E00CDB3FC /* BaseListController.swift in Sources */,
+				D63077B523BDBD2C00D9A166 /* AppsHeaderCell.swift in Sources */,
 				D6295C8C23AB106000F9AE9E /* SceneDelegate.swift in Sources */,
 				D64EA42823B9BB5800EA73F8 /* AppsHorizontalController.swift in Sources */,
 				D6C26DD823B9C11900A824C5 /* AppRowCell.swift in Sources */,
