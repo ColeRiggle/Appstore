@@ -21,6 +21,28 @@ class AppsPageController: BaseListController , UICollectionViewDelegateFlowLayou
         
         // 1: First step for collection view header
         collectionView.register(AppsPageHeader.self, forSupplementaryViewOfKind: UICollectionView.elementKindSectionHeader, withReuseIdentifier: headerId)
+        
+        fetchData()
+    }
+    
+    var editorsChoiceGames: AppGroup?
+    
+    var groups = [AppGroup]()
+    
+    fileprivate func fetchData() {
+        print("Fetching new JSON Data...")
+        
+        Service.shared.fetchGames { (appGroup, error) in
+            if let error = error {
+                print("Failed to fetch games: ", error)
+                return
+            }
+            
+            DispatchQueue.main.async {
+                self.editorsChoiceGames = appGroup
+                self.collectionView.reloadData()
+            }
+        }
     }
     
     // 2: Second step for collection view header
@@ -35,11 +57,14 @@ class AppsPageController: BaseListController , UICollectionViewDelegateFlowLayou
     }
     
     override func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return 5
+        return groups.count
     }
     
     override func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: cellId, for: indexPath)
+        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: cellId, for: indexPath) as! AppsGroupCell
+        cell.titleLabel.text = editorsChoiceGames?.feed.title
+        cell.horizontalController.appGroup = editorsChoiceGames
+        cell.horizontalController.collectionView.reloadData()
         return cell
     }
     
