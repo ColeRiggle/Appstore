@@ -13,6 +13,14 @@ class AppsPageController: BaseListController , UICollectionViewDelegateFlowLayou
     let cellId = "id"
     let headerId = "appsPageControllerHeaderId"
     
+    let activityIndicatorView: UIActivityIndicatorView = {
+        let aiv = UIActivityIndicatorView(style: .large)
+        aiv.color = .black
+        aiv.startAnimating()
+        aiv.hidesWhenStopped = true
+        return aiv
+    }()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         collectionView.backgroundColor = .white
@@ -25,6 +33,7 @@ class AppsPageController: BaseListController , UICollectionViewDelegateFlowLayou
         fetchData()
     }
     
+    var socialApps = [SocialApp]()
     var groups = [AppGroup]()
     
     fileprivate func fetchData() {
@@ -55,6 +64,15 @@ class AppsPageController: BaseListController , UICollectionViewDelegateFlowLayou
             group3 = appGroup
         }
         
+        dispatchGroup.enter()
+        Service.shared.fetchSocialApps { (apps, error) in
+            dispatchGroup.leave()
+            // error should be checked
+        
+//            apps?.forEach({ print($0.name) })
+            self.socialApps = apps ?? []
+        }
+        
         // completion
         dispatchGroup.notify(queue: .main) {
             print("Completed the disbatch group tasks...")
@@ -75,7 +93,8 @@ class AppsPageController: BaseListController , UICollectionViewDelegateFlowLayou
     // 2: Second step for collection view header
     override func collectionView(_ collectionView: UICollectionView, viewForSupplementaryElementOfKind kind: String, at indexPath: IndexPath) -> UICollectionReusableView {
         let header = collectionView.dequeueReusableSupplementaryView(ofKind: kind, withReuseIdentifier: headerId, for: indexPath) as! AppsPageHeader
-        header.appHeaderHorizontalController
+        header.appHeaderHorizontalController.socialApps = self.socialApps
+        header.appHeaderHorizontalController.collectionView.reloadData()
         return header
     }
     

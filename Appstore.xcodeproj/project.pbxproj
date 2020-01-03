@@ -30,6 +30,7 @@
 		D6CDFE7F23AC84E60068E61A /* SearchResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6CDFE7E23AC84E60068E61A /* SearchResult.swift */; };
 		D6E0323B23B9B28D00CDB3FC /* AppsPageController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6E0323A23B9B28D00CDB3FC /* AppsPageController.swift */; };
 		D6E0323D23B9B33E00CDB3FC /* BaseListController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6E0323C23B9B33E00CDB3FC /* BaseListController.swift */; };
+		D6E67D0F23BF055D0098967E /* SocialApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6E67D0E23BF055D0098967E /* SocialApp.swift */; };
 		D6EDD17E23B9C1E7009187CA /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6EDD17D23B9C1E7009187CA /* Extensions.swift */; };
 /* End PBXBuildFile section */
 
@@ -61,6 +62,7 @@
 		D6CDFE7E23AC84E60068E61A /* SearchResult.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchResult.swift; sourceTree = "<group>"; };
 		D6E0323A23B9B28D00CDB3FC /* AppsPageController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppsPageController.swift; sourceTree = "<group>"; };
 		D6E0323C23B9B33E00CDB3FC /* BaseListController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseListController.swift; sourceTree = "<group>"; };
+		D6E67D0E23BF055D0098967E /* SocialApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SocialApp.swift; sourceTree = "<group>"; };
 		D6EDD17D23B9C1E7009187CA /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -184,6 +186,7 @@
 			children = (
 				D6CDFE7E23AC84E60068E61A /* SearchResult.swift */,
 				D63077B623BEF28800D9A166 /* AppGroup.swift */,
+				D6E67D0E23BF055D0098967E /* SocialApp.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -324,6 +327,7 @@
 				D6295C9E23AB10D100F9AE9E /* BaseTabBarController.swift in Sources */,
 				D6E0323B23B9B28D00CDB3FC /* AppsPageController.swift in Sources */,
 				D6CDFE7F23AC84E60068E61A /* SearchResult.swift in Sources */,
+				D6E67D0F23BF055D0098967E /* SocialApp.swift in Sources */,
 				D6295C8E23AB106000F9AE9E /* ViewController.swift in Sources */,
 				D6295C8A23AB106000F9AE9E /* AppDelegate.swift in Sources */,
 				D6295CA123AB1E7100F9AE9E /* AppsSearchController.swift in Sources */,
