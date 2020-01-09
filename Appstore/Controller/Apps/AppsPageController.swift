@@ -30,6 +30,9 @@ class AppsPageController: BaseListController , UICollectionViewDelegateFlowLayou
         // 1: First step for collection view header
         collectionView.register(AppsPageHeader.self, forSupplementaryViewOfKind: UICollectionView.elementKindSectionHeader, withReuseIdentifier: headerId)
         
+        view.addSubview(activityIndicatorView)
+        activityIndicatorView.fillSuperview()
+        
         fetchData()
     }
     
@@ -77,6 +80,8 @@ class AppsPageController: BaseListController , UICollectionViewDelegateFlowLayou
         dispatchGroup.notify(queue: .main) {
             print("Completed the disbatch group tasks...")
             
+            self.activityIndicatorView.stopAnimating()
+            
             if let group = group1 {
                 self.groups.append(group)
             }
@@ -86,6 +91,7 @@ class AppsPageController: BaseListController , UICollectionViewDelegateFlowLayou
             if let group = group3 {
                 self.groups.append(group)
             }
+
             self.collectionView.reloadData()
         }
     }
