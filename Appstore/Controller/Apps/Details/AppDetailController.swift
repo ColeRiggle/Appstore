@@ -50,7 +50,12 @@ class AppDetailController: BaseListController, UICollectionViewDelegateFlowLayou
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
         
         // calculate the necessary size for out cell
+        let dummyCell = AppDetailCell(frame: .init(x: 0, y: 0, width: view.frame.width, height: 1000))
+        dummyCell.releaseNotesLabel.text = app?.releaseNotes
+        dummyCell.layoutIfNeeded()
         
-        return .init(width: view.frame.width, height: 600)
+        let estimatedSize = dummyCell.systemLayoutSizeFitting(.init(width: view.frame.width, height: view.frame.height))
+        
+        return .init(width: view.frame.width, height: estimatedSize.height)
     }
 }
