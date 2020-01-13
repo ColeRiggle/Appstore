@@ -40,10 +40,7 @@ class AppDetailController: BaseListController, UICollectionViewDelegateFlowLayou
     
     override func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: detailCellId, for: indexPath) as! AppDetailCell
-        cell.nameLabel.text = app?.trackName
-        cell.releaseNotesLabel.text = app?.releaseNotes
-        cell.appIconImageView.sd_setImage(with: URL(string: app?.artworkUrl100 ?? ""))
-        cell.priceButton.setTitle(app?.formattedPrice, for: .normal)
+        cell.app = app
         return cell
     }
     
@@ -51,7 +48,8 @@ class AppDetailController: BaseListController, UICollectionViewDelegateFlowLayou
         
         // calculate the necessary size for out cell
         let dummyCell = AppDetailCell(frame: .init(x: 0, y: 0, width: view.frame.width, height: 1000))
-        dummyCell.releaseNotesLabel.text = app?.releaseNotes
+        
+        dummyCell.app = app
         dummyCell.layoutIfNeeded()
         
         let estimatedSize = dummyCell.systemLayoutSizeFitting(.init(width: view.frame.width, height: view.frame.height))
