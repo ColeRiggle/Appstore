@@ -32,6 +32,7 @@
 		D67A63FB23D00646001864CA /* ReviewRowCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D67A63FA23D00646001864CA /* ReviewRowCell.swift */; };
 		D67A63FD23D007CD001864CA /* ReviewsController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D67A63FC23D007CD001864CA /* ReviewsController.swift */; };
 		D67A63FF23D00940001864CA /* ReviewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D67A63FE23D00940001864CA /* ReviewCell.swift */; };
+		D67A640123D00F46001864CA /* Reviews.swift in Sources */ = {isa = PBXBuildFile; fileRef = D67A640023D00F46001864CA /* Reviews.swift */; };
 		D6C26DD823B9C11900A824C5 /* AppRowCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6C26DD723B9C11900A824C5 /* AppRowCell.swift */; };
 		D6CDFE7F23AC84E60068E61A /* SearchResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6CDFE7E23AC84E60068E61A /* SearchResult.swift */; };
 		D6E0323B23B9B28D00CDB3FC /* AppsPageController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6E0323A23B9B28D00CDB3FC /* AppsPageController.swift */; };
@@ -73,6 +74,7 @@
 		D67A63FA23D00646001864CA /* ReviewRowCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReviewRowCell.swift; sourceTree = "<group>"; };
 		D67A63FC23D007CD001864CA /* ReviewsController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReviewsController.swift; sourceTree = "<group>"; };
 		D67A63FE23D00940001864CA /* ReviewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReviewCell.swift; sourceTree = "<group>"; };
+		D67A640023D00F46001864CA /* Reviews.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Reviews.swift; sourceTree = "<group>"; };
 		D6C26DD723B9C11900A824C5 /* AppRowCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppRowCell.swift; sourceTree = "<group>"; };
 		D6CDFE7E23AC84E60068E61A /* SearchResult.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchResult.swift; sourceTree = "<group>"; };
 		D6E0323A23B9B28D00CDB3FC /* AppsPageController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppsPageController.swift; sourceTree = "<group>"; };
@@ -219,6 +221,7 @@
 				D6CDFE7E23AC84E60068E61A /* SearchResult.swift */,
 				D63077B623BEF28800D9A166 /* AppGroup.swift */,
 				D6E67D0E23BF055D0098967E /* SocialApp.swift */,
+				D67A640023D00F46001864CA /* Reviews.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -375,6 +378,7 @@
 				D67A63F823CC1B13001864CA /* PreviewScreenshotsController.swift in Sources */,
 				D6295C8E23AB106000F9AE9E /* ViewController.swift in Sources */,
 				D6295C8A23AB106000F9AE9E /* AppDelegate.swift in Sources */,
+				D67A640123D00F46001864CA /* Reviews.swift in Sources */,
 				D6295CA123AB1E7100F9AE9E /* AppsSearchController.swift in Sources */,
 				D64EA42623B9B71500EA73F8 /* AppsGroupCell.swift in Sources */,
 				D6295CA423AB232400F9AE9E /* SearchResultCell.swift in Sources */,
