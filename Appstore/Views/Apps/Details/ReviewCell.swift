@@ -1,5 +1,5 @@
 //
-//  ReviewRowCell.swift
+//  ReviewCell.swift
 //  Appstore
 //
 //  Created by Cole Riggle on 1/15/20.
@@ -8,15 +8,14 @@
 
 import UIKit
 
-class ReviewRowCell: UICollectionViewCell {
-    
-    let reviewsController = ReviewsController()
+class ReviewCell: UICollectionViewCell {
     
     override init(frame: CGRect) {
         super.init(frame: frame)
-        backgroundColor = .yellow
-        addSubview(reviewsController.view)
-        reviewsController.view.fillSuperview()
+        
+        backgroundColor = .systemGray
+        layer.cornerRadius = 16
+        clipsToBounds = true
     }
     
     required init?(coder: NSCoder) {
