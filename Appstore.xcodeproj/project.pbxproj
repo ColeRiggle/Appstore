@@ -29,6 +29,7 @@
 		D65791A223CACD00005D03F4 /* AppDetailCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D65791A123CACD00005D03F4 /* AppDetailCell.swift */; };
 		D67A63F623CC19ED001864CA /* PreviewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D67A63F523CC19ED001864CA /* PreviewCell.swift */; };
 		D67A63F823CC1B13001864CA /* PreviewScreenshotsController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D67A63F723CC1B13001864CA /* PreviewScreenshotsController.swift */; };
+		D67A63FB23D00646001864CA /* ReviewRowCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D67A63FA23D00646001864CA /* ReviewRowCell.swift */; };
 		D6C26DD823B9C11900A824C5 /* AppRowCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6C26DD723B9C11900A824C5 /* AppRowCell.swift */; };
 		D6CDFE7F23AC84E60068E61A /* SearchResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6CDFE7E23AC84E60068E61A /* SearchResult.swift */; };
 		D6E0323B23B9B28D00CDB3FC /* AppsPageController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6E0323A23B9B28D00CDB3FC /* AppsPageController.swift */; };
@@ -67,6 +68,7 @@
 		D65791A123CACD00005D03F4 /* AppDetailCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDetailCell.swift; sourceTree = "<group>"; };
 		D67A63F523CC19ED001864CA /* PreviewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PreviewCell.swift; sourceTree = "<group>"; };
 		D67A63F723CC1B13001864CA /* PreviewScreenshotsController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PreviewScreenshotsController.swift; sourceTree = "<group>"; };
+		D67A63FA23D00646001864CA /* ReviewRowCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReviewRowCell.swift; sourceTree = "<group>"; };
 		D6C26DD723B9C11900A824C5 /* AppRowCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppRowCell.swift; sourceTree = "<group>"; };
 		D6CDFE7E23AC84E60068E61A /* SearchResult.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchResult.swift; sourceTree = "<group>"; };
 		D6E0323A23B9B28D00CDB3FC /* AppsPageController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppsPageController.swift; sourceTree = "<group>"; };
@@ -201,6 +203,7 @@
 			children = (
 				D65791A123CACD00005D03F4 /* AppDetailCell.swift */,
 				D67A63F523CC19ED001864CA /* PreviewCell.swift */,
+				D67A63FA23D00646001864CA /* ReviewRowCell.swift */,
 			);
 			path = Details;
 			sourceTree = "<group>";
@@ -382,6 +385,7 @@
 				D65791A223CACD00005D03F4 /* AppDetailCell.swift in Sources */,
 				D63077B523BDBD2C00D9A166 /* AppsHeaderCell.swift in Sources */,
 				D67A63F623CC19ED001864CA /* PreviewCell.swift in Sources */,
+				D67A63FB23D00646001864CA /* ReviewRowCell.swift in Sources */,
 				D6295C8C23AB106000F9AE9E /* SceneDelegate.swift in Sources */,
 				D64EA42823B9BB5800EA73F8 /* AppsHorizontalController.swift in Sources */,
 				D6C26DD823B9C11900A824C5 /* AppRowCell.swift in Sources */,
