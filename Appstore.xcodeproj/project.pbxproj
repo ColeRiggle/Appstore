@@ -33,6 +33,7 @@
 		D67A63FD23D007CD001864CA /* ReviewsController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D67A63FC23D007CD001864CA /* ReviewsController.swift */; };
 		D67A63FF23D00940001864CA /* ReviewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D67A63FE23D00940001864CA /* ReviewCell.swift */; };
 		D67A640123D00F46001864CA /* Reviews.swift in Sources */ = {isa = PBXBuildFile; fileRef = D67A640023D00F46001864CA /* Reviews.swift */; };
+		D685546923ECB09D00D3B6A7 /* TodayController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D685546823ECB09D00D3B6A7 /* TodayController.swift */; };
 		D6C26DD823B9C11900A824C5 /* AppRowCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6C26DD723B9C11900A824C5 /* AppRowCell.swift */; };
 		D6CDFE7F23AC84E60068E61A /* SearchResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6CDFE7E23AC84E60068E61A /* SearchResult.swift */; };
 		D6E0323B23B9B28D00CDB3FC /* AppsPageController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6E0323A23B9B28D00CDB3FC /* AppsPageController.swift */; };
@@ -75,6 +76,7 @@
 		D67A63FC23D007CD001864CA /* ReviewsController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReviewsController.swift; sourceTree = "<group>"; };
 		D67A63FE23D00940001864CA /* ReviewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReviewCell.swift; sourceTree = "<group>"; };
 		D67A640023D00F46001864CA /* Reviews.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Reviews.swift; sourceTree = "<group>"; };
+		D685546823ECB09D00D3B6A7 /* TodayController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodayController.swift; sourceTree = "<group>"; };
 		D6C26DD723B9C11900A824C5 /* AppRowCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppRowCell.swift; sourceTree = "<group>"; };
 		D6CDFE7E23AC84E60068E61A /* SearchResult.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchResult.swift; sourceTree = "<group>"; };
 		D6E0323A23B9B28D00CDB3FC /* AppsPageController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppsPageController.swift; sourceTree = "<group>"; };
@@ -163,6 +165,7 @@
 		D6295C9F23AB1E2E00F9AE9E /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				D685546723ECB08B00D3B6A7 /* Today */,
 				D6E0323E23B9B3C200CDB3FC /* Search */,
 				D6E0323923B9B26600CDB3FC /* Apps */,
 				D6295C9D23AB10D100F9AE9E /* BaseTabBarController.swift */,
@@ -213,6 +216,14 @@
 				D67A63FE23D00940001864CA /* ReviewCell.swift */,
 			);
 			path = Details;
+			sourceTree = "<group>";
+		};
+		D685546723ECB08B00D3B6A7 /* Today */ = {
+			isa = PBXGroup;
+			children = (
+				D685546823ECB09D00D3B6A7 /* TodayController.swift */,
+			);
+			path = Today;
 			sourceTree = "<group>";
 		};
 		D6CDFE7D23AC84D20068E61A /* Model */ = {
@@ -391,6 +402,7 @@
 				D63077B123BDBA1100D9A166 /* AppsPageHeader.swift in Sources */,
 				D6295CA723AB30C600F9AE9E /* UIView+Layout.swift in Sources */,
 				D67A63FD23D007CD001864CA /* ReviewsController.swift in Sources */,
+				D685546923ECB09D00D3B6A7 /* TodayController.swift in Sources */,
 				D6EDD17E23B9C1E7009187CA /* Extensions.swift in Sources */,
 				D6E0323D23B9B33E00CDB3FC /* BaseListController.swift in Sources */,
 				D63077B723BEF28800D9A166 /* AppGroup.swift in Sources */,
