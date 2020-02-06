@@ -34,6 +34,7 @@
 		D67A63FF23D00940001864CA /* ReviewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D67A63FE23D00940001864CA /* ReviewCell.swift */; };
 		D67A640123D00F46001864CA /* Reviews.swift in Sources */ = {isa = PBXBuildFile; fileRef = D67A640023D00F46001864CA /* Reviews.swift */; };
 		D685546923ECB09D00D3B6A7 /* TodayController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D685546823ECB09D00D3B6A7 /* TodayController.swift */; };
+		D685546C23ECB15700D3B6A7 /* TodayCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D685546B23ECB15700D3B6A7 /* TodayCell.swift */; };
 		D6C26DD823B9C11900A824C5 /* AppRowCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6C26DD723B9C11900A824C5 /* AppRowCell.swift */; };
 		D6CDFE7F23AC84E60068E61A /* SearchResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6CDFE7E23AC84E60068E61A /* SearchResult.swift */; };
 		D6E0323B23B9B28D00CDB3FC /* AppsPageController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6E0323A23B9B28D00CDB3FC /* AppsPageController.swift */; };
@@ -77,6 +78,7 @@
 		D67A63FE23D00940001864CA /* ReviewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReviewCell.swift; sourceTree = "<group>"; };
 		D67A640023D00F46001864CA /* Reviews.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Reviews.swift; sourceTree = "<group>"; };
 		D685546823ECB09D00D3B6A7 /* TodayController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodayController.swift; sourceTree = "<group>"; };
+		D685546B23ECB15700D3B6A7 /* TodayCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodayCell.swift; sourceTree = "<group>"; };
 		D6C26DD723B9C11900A824C5 /* AppRowCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppRowCell.swift; sourceTree = "<group>"; };
 		D6CDFE7E23AC84E60068E61A /* SearchResult.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchResult.swift; sourceTree = "<group>"; };
 		D6E0323A23B9B28D00CDB3FC /* AppsPageController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppsPageController.swift; sourceTree = "<group>"; };
@@ -178,6 +180,7 @@
 		D6295CA223AB22F100F9AE9E /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				D685546A23ECB14900D3B6A7 /* Today */,
 				D64EA42423B9B6FC00EA73F8 /* Apps */,
 				D6295CA323AB232400F9AE9E /* SearchResultCell.swift */,
 			);
@@ -222,6 +225,14 @@
 			isa = PBXGroup;
 			children = (
 				D685546823ECB09D00D3B6A7 /* TodayController.swift */,
+			);
+			path = Today;
+			sourceTree = "<group>";
+		};
+		D685546A23ECB14900D3B6A7 /* Today */ = {
+			isa = PBXGroup;
+			children = (
+				D685546B23ECB15700D3B6A7 /* TodayCell.swift */,
 			);
 			path = Today;
 			sourceTree = "<group>";
@@ -389,6 +400,7 @@
 				D67A63F823CC1B13001864CA /* PreviewScreenshotsController.swift in Sources */,
 				D6295C8E23AB106000F9AE9E /* ViewController.swift in Sources */,
 				D6295C8A23AB106000F9AE9E /* AppDelegate.swift in Sources */,
+				D685546C23ECB15700D3B6A7 /* TodayCell.swift in Sources */,
 				D67A640123D00F46001864CA /* Reviews.swift in Sources */,
 				D6295CA123AB1E7100F9AE9E /* AppsSearchController.swift in Sources */,
 				D64EA42623B9B71500EA73F8 /* AppsGroupCell.swift in Sources */,
