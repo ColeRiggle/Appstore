@@ -11,6 +11,19 @@ import UIKit
 class AppFullscreenController: UITableViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        // Get rid of excess lines
+        tableView.tableFooterView = UIView()
+        tableView.separatorStyle = .none
+    }
+    
+    override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        1
+    }
+    
+    override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let cell = AppFullscreenDescriptionCell()
+        return cell
     }
     
     override func tableView(_ tableView: UITableView, viewForHeaderInSection section: Int) -> UIView? {
@@ -21,4 +34,6 @@ class AppFullscreenController: UITableViewController {
     override func tableView(_ tableView: UITableView, heightForHeaderInSection section: Int) -> CGFloat {
         return 450
     }
+    
+    
 }
