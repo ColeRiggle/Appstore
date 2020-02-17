@@ -35,5 +35,14 @@ class AppFullscreenController: UITableViewController {
         return 450
     }
     
+    init() {
+        
+        // Make the entire table view scrollable, including the header
+        super.init(style: .grouped)
+    }
+    
+    required init?(coder: NSCoder) {
+        fatalError("init(coder:) has not been implemented")
+    }
     
 }
